@@ -40,6 +40,13 @@ Trigger `workerTick` (1 menit) dibuat otomatis oleh setup untuk memproses antrea
 7. Pastikan `APP_URL` (langkah A6) sama dengan alamat Pages ini.
 8. Update berikutnya: `git add .` → `git commit -m "pesan"` → `git push`, lalu Ctrl+Shift+R.
 
+## B2. Jika muncul "Batas pemakaian tercapai / Kuota Gemini penuh"
+Ini batas dari Google pada API key Anda (paket gratis), bukan dari aplikasi. Aplikasi kini menunggu otomatis bila kuota per menit penuh, mengatur jarak panggilan, dan berpindah ke model Flash bila model Pro tidak punya kuota. Jika masih muncul:
+- Pengaturan → Gemini API: pilih **Flash** (atau **Flash-Lite**) untuk Model Utama **dan** Model Cerdas; hindari Pro/Preview di paket gratis.
+- Buat bagian satu per satu; tunggu ±1 menit bila pesan "per menit".
+- Kuota harian direset ±14.00 WIB; atau aktifkan penagihan di Google AI Studio.
+- Opsional: Script Property `GEMINI_RPM` = batas panggilan/menit yang diizinkan akun Anda.
+
 ## C. Pemakaian pertama
 Daftar akun → lengkapi **Profil & Data Induk** (sekolah, mapel, kelas, daftar bab) → **Pengaturan → Gemini API**: tempel kunci (aistudio.google.com), Uji koneksi, Pilih otomatis → ikuti alur Menu 1–9.
 

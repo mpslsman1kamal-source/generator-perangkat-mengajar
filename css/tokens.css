@@ -1,0 +1,11 @@
+/* Design token — "Blueprint Brutalist Edu-Workbench" (diturunkan dari DESIGN.md pada ZIP Stitch) */
+:root {
+  --canvas: #F8F9FF; --surface: #FFFFFF; --tint-1: #EEF4FF; --tint-2: #E5EFFF; --tint-3: #DBE9FF;
+  --ink: #0D1C2D; --ink-2: #334155; --ink-3: #64748B; --line: #000000; --line-soft: #CBD5E1;
+  --m1: #2563EB; --m2: #15803D; --m3: #FACC15; --m4: #C2410C; --m5: #0F766E; --m6: #7C3AED; --m7: #3730A3; --m8: #B91C1C; --m9: #BE185D; --support: #334155;
+  --st-belum: #64748B; --st-draf: #FACC15; --st-proses: #2563EB; --st-final: #15803D; --st-perbaikan: #B91C1C;
+  --ok: #15803D; --warn: #B45309; --err: #B91C1C; --focus: #2563EB;
+  --bw: 2px; --r: 2px; --sh-sm: 2px 2px 0 #000; --sh-md: 4px 4px 0 #000; --sh-lg: 6px 6px 0 #000;
+  --f-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; --f-mono: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
+  --sidebar: 240px; --topbar: 64px; --gut: 16px;
+}
